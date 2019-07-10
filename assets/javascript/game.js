@@ -11,7 +11,7 @@ function renderButtons() {
         btn.text(topics[i]);
         $("#buttons-view").append(btn);
     }
-}
+};
 
 //running function to create buttons
 renderButtons();
@@ -21,8 +21,8 @@ $("#add-gif").on("click", function(event) {
     event.preventDefault();
     var newBTN = $("#gif-input").val().trim();
     topics.push(newBTN);
-    renderButtons();
-    
+    renderButtons();  
+});
 
 //what happens when you click each button
 $("button").on("click", function () {
@@ -37,6 +37,7 @@ $("button").on("click", function () {
         method: "GET",
     })
 
+    
         //retrieves gif results and puts them in html
         .then(function (response) {
             var results = response.data;
@@ -45,12 +46,12 @@ $("button").on("click", function () {
                 var rating = results[i].rating;
                 var p = $("<p>").text("Rating: " + rating);
                 var natureImage = $("<img>");
-                natureImage.attr("src", results[i].images.fixed_height.url);
+                natureImage.attr("src", results[i].images.fixed_height_still.url);
                 gifDiv.append(natureImage);
                 gifDiv.append(p);
                 $("#gifs-appear-here").prepend(gifDiv);
             }
         })
 
-});
+
 })
