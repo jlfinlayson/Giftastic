@@ -16,6 +16,14 @@ function renderButtons() {
 //running function to create buttons
 renderButtons();
 
+//creating new buttons
+$("#add-gif").on("click", function(event) {
+    event.preventDefault();
+    var newBTN = $("#gif-input").val().trim();
+    topics.push(newBTN);
+    renderButtons();
+    
+
 //what happens when you click each button
 $("button").on("click", function () {
     var nature = $(this).text();
@@ -44,4 +52,5 @@ $("button").on("click", function () {
             }
         })
 
+});
 })
