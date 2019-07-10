@@ -10,6 +10,21 @@ $.ajax({
     method: "GET"
 })
 
+.then(function(response){
+    var results = response.data;
+    for (var i = 0; i < results.length; i++) {
+        var gifDiv = $("<div>");
+        var rating = results[i].rating;
+        var p = $("<p>").text("Rating: " + rating);
+        var natureImage = $("<img>");
+        natureImage.attr("src", results[i].images.fixed_height.url);
+        gifDiv.append(natureImage);
+        gifDiv.append(p);
+        $("#gifs-appear-here").prepend(gifDiv);
+}
+})
+
+
 //function to create buttons for each topic
 function renderButtons() {
     $("#buttons-view").empty();
@@ -24,3 +39,4 @@ function renderButtons() {
 
 //running function to create buttons
 renderButtons();
+
