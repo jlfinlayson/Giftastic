@@ -1,16 +1,24 @@
-/* button {
-    border-radius: 8px;
-    background-color: #008CBA;
-} */
 
 .natureElement {
 
     border-radius: 8px;
-    background-color: #008CBA;
+    background-color: #bd8c7d;
+    color: white;
+    margin: 2px;
+}
+
+#add-gif{
+border-radius: 8px;
+background-color: #49494b;
+color: white;
 }
 
 
 .gif{
-padding: 10px;
+margin: 10px;
 float: left;
+}
+
+#buttons-view{
+    margin: 10px;
 }
