@@ -1,4 +1,16 @@
-button {
+/* button {
     border-radius: 8px;
     background-color: #008CBA;
+} */
+
+.natureElement {
+
+    border-radius: 8px;
+    background-color: #008CBA;
+}
+
+
+.gif{
+padding: 10px;
+float: left;
 }

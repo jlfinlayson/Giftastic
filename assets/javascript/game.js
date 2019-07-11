@@ -22,10 +22,12 @@ $("#add-gif").on("click", function(event) {
     var newBTN = $("#gif-input").val().trim();
     topics.push(newBTN);
     renderButtons();  
+    $("#gif-input").text.empty();
 });
 
+$(document).on('click', function() {
 //what happens when you click each button
-$("button").on("click", function () {
+$(".natureElement").on("click", function () {
     var nature = $(this).text();
 
     //giphy url with topic and api key
@@ -43,9 +45,11 @@ $("button").on("click", function () {
             var results = response.data;
             for (var i = 0; i < results.length; i++) {
                 var gifDiv = $("<div>");
+                gifDiv.addClass("gif")
                 var rating = results[i].rating;
                 var p = $("<p>").text("Rating: " + rating);
                 var natureImage = $("<img>");
+                natureImage.attr("data-state", "")
                 natureImage.attr("src", results[i].images.fixed_height_still.url);
                 gifDiv.append(natureImage);
                 gifDiv.append(p);
@@ -53,5 +57,5 @@ $("button").on("click", function () {
             }
         })
 
-
+})
 })
