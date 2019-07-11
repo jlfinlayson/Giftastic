@@ -1,5 +1,5 @@
 //current list of nature topics
-var topics = ["clouds", "sunrise", "stars", "desert", "snow", "moon", "rainbow", "lava", "sand", "waves"]
+var topics = ["the 1975", "motley crue", "the clash", "arctic monkeys", "the doors", "james bay", "the strokes", "def leppard", "the struts", "nirvana", "the cure"]
 
 //function to create buttons for each topic
 function renderButtons() {
