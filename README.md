@@ -1,3 +1,18 @@
-giftastic!
+# Giftastic!
 
-This game utilizes html, css, javascript, jquery, and api to make gifs appear on the screen. The game includes buttons associated with a gif theme along with a search bar to search your own gifs.
+Giftastic is a web application that allows users to view gifs of their favorite artists. The application features preset options as well as the option to search for the users artist of choice.<br>
+
+ 
+ ### Technologies Used
+
+* HTML
+* CSS
+* Bootstrap
+* Javascript
+* jQuery
+* Giphy API
+ 
+ ### Demo
+ 
+ * [DEMO](https://jlfinlayson.github.io/giftastic/)
+
