@@ -14,5 +14,5 @@ Giftastic is a web application that allows users to view gifs of their favorite 
  
  ### Demo
  
- * [DEMO](https://jlfinlayson.github.io/giftastic/)
+ * [DEMO](https://jlfinlayson.github.io/Giftastic/)
 
