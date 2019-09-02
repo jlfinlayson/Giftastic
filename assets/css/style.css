@@ -1,5 +1,7 @@
-
-.natureElement {
+body{
+    background-color: #eadbd7 !important;
+}
+.artistElement {
 
     border-radius: 8px;
     background-color: #bd8c7d;
@@ -21,4 +23,13 @@ float: left;
 
 #buttons-view{
     margin: 10px;
+}
+
+#gifs-appear-here {
+    align-content: center;
+}
+
+#text {
+    color: #bd8c7d;
+    text-align: center;
 }
